@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            position: relative;
+            height: 600px;
+            width: 800px;
+        }
+
+        .header {
+            position: absolute;
+            top: 5px;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+
+        .nav {
+            display: grid;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 20%;
+        }
+
+        .logo {
+            font-size: 16pt;
+            font-weight: 700;
+        }
+
+        .menu {
+            display: grid;
+            font-weight: 700;
+            grid-template-columns: repeat(4, auto);
+            grid-column-gap: 16px;
+        }
+
+        .info {
+            display: grid;
+            font-weight: 900;
+            grid-template-columns: auto auto;
+        }
+
+        .main {
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .bg {
+            display: grid;
+            background-image: url(vacation.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .topic {
+            height: 90%;
+            display: grid;
+            font-size: 48pt;
+            font-weight: 900;
+            background-color: #F8ECEB;
+            align-items: center;
+            padding-left: 60px;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: auto auto;
+            padding-top: 24px;
+            padding-left: 24px;
+            padding-right: 24px;
+            justify-content: space-between;
+        }
+
+        .sns {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            justify-content: space-evenly;
+            grid-column-gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="logo">zuzu.</div>
+            <div class="menu">
+                <div>about</div>
+                <div>collections</div>
+                <div>videos</div>
+                <div>contact</div>
+            </div>
+            <div class="info">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div>ENG</div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="bg"></div>
+        <div class="tab">
+            <div class="topic">New<br>collection</div>
+            <div class="footer">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="sns">
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
